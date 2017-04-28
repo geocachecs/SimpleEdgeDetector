@@ -94,7 +94,7 @@ def edge_refine(image,square_size=60,freq=50,heapsize=50):
 						if(len(heap)>heapsize):
 							heapq.heappop(heap)
 			for pix in heap:
-				newPixels[(pix.getCoord)] = 1
+				newPixels[pix.getCoord()] = 1
 			output+=heap
 			heap = []
 				
